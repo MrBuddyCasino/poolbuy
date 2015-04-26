@@ -5,4 +5,12 @@
   )
 
 (reloaded.repl/set-init! dev-system)
+	)
+
+
+(comment
+(use 'poolbuy.core)
+(in-ns 'poolbuy.core)
+(def jetty (run-jetty handler {:port 8080 :join? false}))
+(require 'poolbuy.core :reload)
 )

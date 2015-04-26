@@ -1,14 +1,22 @@
-# poolbuy
+# poolbuy.io
 
-A Clojure library designed to ... well, that part is up to you.
+When this is done, people will be able to pool their orders to buy stuff in shops. This is great e.g. for electronic components,
+where there is often a substantial minimum order size.
 
-## Usage
+Target audience is the Arduino/Makerspace/RC crowd.
 
-FIXME
+Technology
+==========
 
-## License
+Backend:
+- Clojure using liberator/compojure/ring
+- Postgres
 
-Copyright © 2014 FIXME
+Frontend:
+- Bootstrap
+- Mithril, a virtual DOM client-side MVC framework using functional principles (similar to React)
+- JSX transforms the js template sources so you can use html tags
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Build:
+  * backend: Leiningen
+  * frontend: Gulp, NPM
