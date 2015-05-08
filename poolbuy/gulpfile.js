@@ -65,4 +65,4 @@ gulp.task('browserify', function() {
         .pipe(gulp.dest('./resources/public/js/'))
 });
 
-gulp.task('default', ['watch', 'msx'])
+gulp.task('default', ['watch', 'msx', 'browserify'])
