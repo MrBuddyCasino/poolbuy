@@ -1,3 +1,5 @@
+var poolbuy = require('./../namespace.js');
+
 poolbuy.signup = {};
 
 poolbuy.signup.vm = {}

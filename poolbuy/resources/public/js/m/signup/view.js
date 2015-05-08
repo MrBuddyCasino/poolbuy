@@ -2,6 +2,8 @@
 
 'use strict';
 
+var poolbuy = require('./../namespace.js');
+
 poolbuy.signup.view = function() {
 
      return m("span", [

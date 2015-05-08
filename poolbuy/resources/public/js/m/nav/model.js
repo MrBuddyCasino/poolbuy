@@ -1,6 +1,4 @@
-poolbuy.nav = {};
 
-poolbuy.nav.vm = {}
-poolbuy.nav.vm.init = function() {
+module.exports.init = function() {
     // this.pages = new app.PageList();
 };

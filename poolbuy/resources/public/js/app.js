@@ -1,37 +1,29 @@
 
 // libs
-require('./lib/jquery/dist/jquery.js');
+var $ = require('./lib/jquery/dist/jquery.js');
 //require('./lib/bootstrap/dist/js/bootstrap.js');
-require('./lib/mithril/mithril.js');
+var m = require('./lib/mithril/mithril.js');
+
+var poolbuy = {};
+
+// modules
+poolbuy.home = require('./m/home/component.js');
+poolbuy.nav = require('./m/nav/component.js');
+//poolbuy.login = require('./m/login/module.js');
+//poolbuy.account = require('./m/account/module.js');
+//poolbuy.signup = require('./m/signup/module.js');
+
+// modules
+
+m.mount(document.getElementById('nav-container'), poolbuy.nav);
+m.mount(document.getElementById('main-container'), poolbuy.home);
 
 
-//namespace
-if(poolbuy == undefined)
-{
-	global.poolbuy = {}
-}
+// setup routes
+// m.route(document.body, "/", {
+//    "/": 		poolbuy.home
+//    "/login": 	poolbuy.login,
+//    "/account": poolbuy.account,
+//    "/signup": 	poolbuy.signup
+// });
 
-
-require('./m/setup.js');
-
-require('./m/home/model.js');
-require('./m/home/controller.js');
-require('./m/home/view.js');
-
-require('./m/nav/model.js');
-require('./m/nav/controller.js');
-require('./m/nav/view.js');
-/*
-require('./m/login/model.js');
-require('./m/login/controller.js');
-require('./m/login/view.js');
-
-require('./m/account/model.js');
-require('./m/account/controller.js');
-require('./m/account/view.js');
-*/
-require('./m/signup/model.js');
-require('./m/signup/controller.js');
-require('./m/signup/view.js');
-
-require('./m/common.js');

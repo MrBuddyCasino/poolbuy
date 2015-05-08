@@ -1,3 +1,5 @@
-poolbuy.nav.controller = function() {
-	poolbuy.nav.vm.init();
+var vm = require('./model.js');
+
+module.exports = function() {
+	vm.init();
 };

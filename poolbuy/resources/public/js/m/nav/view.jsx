@@ -2,7 +2,9 @@
 
 'use strict';
 
-poolbuy.nav.view = function() {
+var m = require('./../../lib/mithril/mithril.js');
+
+module.exports = function(ctrl) {
 
 		        // Static navbar
     	return  <nav class="navbar navbar-default" role="navigation">

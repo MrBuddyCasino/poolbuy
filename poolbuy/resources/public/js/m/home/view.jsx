@@ -2,7 +2,9 @@
 
 'use strict';
 
-poolbuy.home.view = function() {
+var m = require('./../../lib/mithril/mithril.js');
+
+module.exports = function(ctrl) {
 	return	<div class="jumbotron">
 		        <h1>Join forces.</h1>
 		        <p>Order parts together, save on shipping.</p>
